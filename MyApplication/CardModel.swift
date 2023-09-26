@@ -13,17 +13,29 @@ struct ImageMap: Decodable {
     let image_url_full: String
 }
 
-struct CardItem:  Decodable {
+struct CardItem: Decodable, Hashable {
     let uuid: String
     let title: String
+    let description: String
+    let content: String
     let image_map: [ImageMap]
     
-    
-    init(uuid: String, title: String, image_map: [ImageMap]) {
+    init(uuid: String, title: String, description: String, content: String, image_map: [ImageMap]) {
         self.uuid = uuid
         self.title = title
+        self.description = description
+        self.content = content
         self.image_map = image_map
     }
+    
+    func hash(into hasher: inout Hasher) {
+            hasher.combine(uuid)
+        }
+
+        static func == (lhs: CardItem, rhs: CardItem) -> Bool {
+            return lhs.uuid == rhs.uuid
+            
+        }
 }
 
 

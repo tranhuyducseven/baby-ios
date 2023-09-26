@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A6266912AC2974300A508DA /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6266902AC2974300A508DA /* DetailView.swift */; };
 		4A8E19882AC283AC006332A5 /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8E19872AC283AB006332A5 /* CardModel.swift */; };
+		4AE271312AC2B2F8008C05EA /* HTMLStringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE271302AC2B2F8008C05EA /* HTMLStringView.swift */; };
 		4AF2D48E2AC12B6B00FFA0A0 /* MyApplicationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF2D48D2AC12B6B00FFA0A0 /* MyApplicationApp.swift */; };
 		4AF2D4902AC12B6B00FFA0A0 /* CardListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF2D48F2AC12B6B00FFA0A0 /* CardListView.swift */; };
 		4AF2D4922AC12B6E00FFA0A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AF2D4912AC12B6E00FFA0A0 /* Assets.xcassets */; };
@@ -35,7 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4A6266902AC2974300A508DA /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		4A8E19872AC283AB006332A5 /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
+		4AE271302AC2B2F8008C05EA /* HTMLStringView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMLStringView.swift; sourceTree = "<group>"; };
 		4AF2D48A2AC12B6B00FFA0A0 /* MyApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AF2D48D2AC12B6B00FFA0A0 /* MyApplicationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyApplicationApp.swift; sourceTree = "<group>"; tabWidth = 4; };
 		4AF2D48F2AC12B6B00FFA0A0 /* CardListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListView.swift; sourceTree = "<group>"; };
@@ -98,7 +102,9 @@
 			children = (
 				4A8E19872AC283AB006332A5 /* CardModel.swift */,
 				4AF2D48D2AC12B6B00FFA0A0 /* MyApplicationApp.swift */,
+				4A6266902AC2974300A508DA /* DetailView.swift */,
 				4AF2D48F2AC12B6B00FFA0A0 /* CardListView.swift */,
+				4AE271302AC2B2F8008C05EA /* HTMLStringView.swift */,
 				4AF2D4912AC12B6E00FFA0A0 /* Assets.xcassets */,
 				4AF2D4932AC12B6E00FFA0A0 /* Preview Content */,
 			);
@@ -261,6 +267,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4AF2D4902AC12B6B00FFA0A0 /* CardListView.swift in Sources */,
+				4AE271312AC2B2F8008C05EA /* HTMLStringView.swift in Sources */,
+				4A6266912AC2974300A508DA /* DetailView.swift in Sources */,
 				4AF2D48E2AC12B6B00FFA0A0 /* MyApplicationApp.swift in Sources */,
 				4A8E19882AC283AC006332A5 /* CardModel.swift in Sources */,
 			);

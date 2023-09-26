@@ -17,33 +17,37 @@ struct DetailView: View {
     
     var body: some View {
         
-        ScrollView {
+//        ScrollView {
+//            
+//            Text(card.title)
+//                .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+//                .font(.system(size: 32))
+//            
+//            Text(card.description)
+//                .fontWeight(.semibold)
+//                .font(.headline)
+//                .foregroundColor(.secondary)
+//                .padding(.top, 4)
+//            
+//            
+//            AsyncImage(url: URL(string: card.image_map[0].image_url)){
+//                image in image
+//                    .resizable()
+//                    .scaledToFit()
+//                    .cornerRadius(8)
+//                
+//                
+//            } placeholder: {
+//                ProgressView()
+//            }
             
-            Text(card.title)
-                .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-                .font(.system(size: 32))
+            Spacer()
             
-            Text(card.description)
-                .fontWeight(.semibold)
-                .font(.headline)
-                .foregroundColor(.secondary)
-                .padding(.top, 4)
+        HTMLStringView(htmlContent: card.content).padding(.horizontal, 12) 
             
+            Spacer()
             
-            AsyncImage(url: URL(string: card.image_map[0].image_url)){
-                image in image
-                    .resizable()
-                    .scaledToFit()
-                    .cornerRadius(8)
-                
-                
-            } placeholder: {
-                ProgressView()
-            }
-            
-            HTMLStringView(htmlContent: "<h1>This is HTML String</h1>")
-            
-        }.frame(maxWidth: .infinity, maxHeight: .infinity).padding(.horizontal, 12)
+      
         
   
     }
